@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIN - s16534 - Form</title>
+    <link rel="stylesheet" type="text/css"   href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box__header">
+                <h1>Task 4B</h1>
+                <p>/form</p>
+            </div>
+            <div class="box__body__inputs" id="create">
+                <form method="post" action="/formdata">
+                    <label class="box__input__label" for="firstName">First name:</label>
+                    <input class="box__input" type="text" name="firstName" value="Robert">
+
+                    <label class="box__input__label" for="lastName">Last name:</label>
+                    <input class="box__input" type="text" name="lastName" value="Lewandowski">
+
+                    <label class="box__input__label" for="age">Wiek:</label>
+                    <input class="box__input" type="number" name="age" value="32">
+                    <input class="btn" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
