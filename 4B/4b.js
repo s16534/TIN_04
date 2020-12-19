@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const hostname = "127.0.0.1";
+const port = 8000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); 
@@ -34,5 +36,10 @@ app.post('/jsondata', (req, res) => {
 });
 
 
-app.listen(3000);
-console.log('listening on port 3000...');
+app.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+  console.log(`Server running at http://${hostname}:${port}/hello`);
+  console.log(`Server running at http://${hostname}:${port}/form`);
+  console.log(`Server running at http://${hostname}:${port}/formdata`);
+  console.log(`Server running at http://${hostname}:${port}/jsondata`);
+})
